@@ -2,11 +2,11 @@
 /*
 Plugin Name: io Sources
 Plugin URI: http://alansari.io
-Description: Add Sources links below posts using ACF
+Description: Add Sources links below posts using ACF Pro in Genesis Framework
 Version: 1.0.0
 Author: Omar Al-Ansari
 Author URI: http://alansari.io
-License: GPLv2
+License: GPLv2+
 */
 
 add_action( 'wp_enqueue_scripts', 'io_custom_css_style' );
