@@ -1,0 +1,49 @@
+/* # Sources fields
+---------------------------------------------------------------------------------------------------- */
+.sources {
+	display: block;
+	font-size: 16px;
+	font-weight: 600;
+	padding-bottom: 20px;
+}
+
+.sources ul {
+	display: -webkit-box;           /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;              /* OLD - Firefox 19- (doesn't work very well) */
+	display: -ms-flexbox;           /* TWEENER - IE 10 */
+	display: -webkit-flex;          /* NEW - Chrome */
+	display: flex;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	-ms-flex-flow: row wrap;
+	    flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	    justify-content: flex-start;
+	-webkit-justify-content: flex-start;
+	margin-left: auto;
+}
+
+.sources ul li {
+	list-style: none;
+	-ms-flex-preferred-size: 33.333333%;
+	    flex-basis: 33.333333%;
+        -webkit-flex-basis: 33.333333%;
+	padding: 5px;
+	font-weight: 400;
+}
+
+@media only screen and (max-width: 860px) {
+	.sources ul li {
+		-ms-flex-preferred-size: 50%;
+	    flex-basis: 50%;
+        -webkit-flex-basis: 50%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+.sources ul li {
+		-ms-flex-preferred-size: 100%;
+	    flex-basis: 100%;
+        -webkit-flex-basis: 100%;
+	}
+}
