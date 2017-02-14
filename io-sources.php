@@ -9,7 +9,10 @@ Author URI: http://alansari.io
 License: GPLv2+
 */
 
-defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
+// If this file is called directly, abort.
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
 
 add_action( 'wp_enqueue_scripts', 'io_custom_css_style' );
 /**
